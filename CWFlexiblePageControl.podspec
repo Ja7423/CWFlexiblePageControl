@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CWFlexiblePageControl'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CWFlexiblePageControl.'
+  s.summary          = 'A pageControl like IG.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This pod is copy from the awesome framework: 'https://github.com/shima11/FlexiblePageControl'.
+  I just convert it from swift to ObjC.
                        DESC
 
   s.homepage         = 'https://github.com/Ja7423/CWFlexiblePageControl'
