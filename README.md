@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/CWFlexiblePageControl.svg?style=flat)](https://cocoapods.org/pods/CWFlexiblePageControl)
 [![Platform](https://img.shields.io/cocoapods/p/CWFlexiblePageControl.svg?style=flat)](https://cocoapods.org/pods/CWFlexiblePageControl)
 
+## Where is this framework came from
+
+This framework was came from the awesome project: 'https://github.com/shima11/FlexiblePageControl'.
+The original project is base on swift.
+All I do is convert it from swift to ObjC.
+If you like it, please give him your star.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
