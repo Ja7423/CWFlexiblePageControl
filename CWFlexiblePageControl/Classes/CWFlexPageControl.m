@@ -108,7 +108,6 @@
     [self updatePageControl:self.config currentPage:self.currentPage];
 }
 
-
 - (void)setCurrentPage:(NSInteger)currentPage
 {
     if (currentPage >= self.numberOfPages || currentPage < 0) return;
@@ -130,6 +129,18 @@
     [self updatePageControl:self.config currentPage:self.currentPage];
 }
 
+- (void)setPageIndicatorTintColor:(UIColor *)pageIndicatorTintColor
+{
+    _pageIndicatorTintColor = pageIndicatorTintColor;
+    [self updateDotColorAtCurrentPage:self.currentPage];
+}
+
+- (void)setCurrentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor
+{
+    _currentPageIndicatorTintColor = currentPageIndicatorTintColor;
+    [self updateDotColorAtCurrentPage:self.currentPage];
+}
+
 #pragma mark - Private setter
 - (void)setDisplayCount:(NSInteger)displayCount
 {
@@ -141,9 +152,8 @@
 #pragma mark - Update
 - (void)updatePageControl:(CWFlexPageConfig *)config currentPage:(NSInteger)currentPage
 {
-    [self.itemViews removeAllObjects];
-    
     if (currentPage < self.displayCount) {
+        [self.itemViews removeAllObjects];
         for (NSInteger index = -2; index < self.displayCount + 2; index ++) {
             FlexPageItemConfig *itemConfig = [[FlexPageItemConfig alloc] initWithPageConfig:self.config];
             CWFlexPageItemView *itemView = [[CWFlexPageItemView alloc] initWithItemConfig:itemConfig index:index];
@@ -153,7 +163,19 @@
             [self.itemViews addObject:itemView];
         }
     } else {
+        CWFlexPageItemView *firstItemView = self.itemViews.firstObject;
+        CWFlexPageItemView *lastItemView = self.itemViews.lastObject;
+        if (!firstItemView || !lastItemView) return;
         
+        [self.itemViews removeAllObjects];
+        for (NSInteger index = firstItemView.index; index <= lastItemView.index; index ++) {
+            FlexPageItemConfig *itemConfig = [[FlexPageItemConfig alloc] initWithPageConfig:self.config];
+            CWFlexPageItemView *itemView = [[CWFlexPageItemView alloc] initWithItemConfig:itemConfig index:index];
+            
+            CGFloat x = itemConfig.itemSize * index;
+            itemView.frame = CGRectMake(x, 0, itemConfig.itemSize, itemConfig.itemSize);
+            [self.itemViews addObject:itemView];
+        }
     }
     
     [self updateScrollView];
