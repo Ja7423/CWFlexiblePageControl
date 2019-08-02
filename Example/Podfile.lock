@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CWFlexiblePageControl: c470b84ee0f1cf03dbd7709157c36ab65a80fa1f
+  CWFlexiblePageControl: 0bb175967e3cdcc93236426b5a841a6077eec5ef
 
 PODFILE CHECKSUM: 98907c6b453ab050bf8a6adfbb9dede64b995481
 

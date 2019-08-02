@@ -17,6 +17,8 @@
 
 @property (nonatomic, strong) CWFlexPageControl *pageControl;
 
+@property (weak, nonatomic) IBOutlet CWFlexPageControl *interFacePageControl;
+
 @end
 
 @implementation CWViewController
@@ -45,6 +47,8 @@
     
     self.pageControl.center = CGPointMake(self.imageScrollView.center.x, CGRectGetMaxY(self.imageScrollView.frame) + 20);
     self.pageControl.numberOfPages = count;
+    
+    self.interFacePageControl.numberOfPages = count;
 }
 
 - (UIScrollView *)imageScrollView
@@ -74,6 +78,7 @@
 {
     NSInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
     self.pageControl.currentPage = index;
+    self.interFacePageControl.currentPage = index;
 }
 
 @end

@@ -1,6 +1,0 @@
-framework module CWFlexiblePageControl {
-  umbrella header "CWFlexiblePageControl-umbrella.h"
-
-  export *
-  module * { export * }
-}
