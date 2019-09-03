@@ -66,7 +66,7 @@
 		A3010A17E150BC1DF2DE901B /* Pods-CWFlexiblePageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWFlexiblePageControl_Example.release.xcconfig"; path = "Target Support Files/Pods-CWFlexiblePageControl_Example/Pods-CWFlexiblePageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B2C6E71233FF20A70B35AB8A /* Pods_CWFlexiblePageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWFlexiblePageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33E8554C7B3734AC3150C1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E0B2EAC20671CF80E8E1F8C8 /* CWFlexiblePageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWFlexiblePageControl.podspec; path = ../CWFlexiblePageControl.podspec; sourceTree = "<group>"; };
+		E0B2EAC20671CF80E8E1F8C8 /* CWFlexiblePageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWFlexiblePageControl.podspec; path = ../CWFlexiblePageControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
