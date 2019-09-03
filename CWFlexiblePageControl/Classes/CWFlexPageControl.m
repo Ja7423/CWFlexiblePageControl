@@ -101,8 +101,6 @@
 {
     _numberOfPages = numberOfPages;
     
-    self.scrollView.hidden = (self.numberOfPages <= 1);
-    
     self.displayCount = MIN(self.config.displayCount, self.numberOfPages);
     
     [self updatePageControl:self.config currentPage:self.currentPage];

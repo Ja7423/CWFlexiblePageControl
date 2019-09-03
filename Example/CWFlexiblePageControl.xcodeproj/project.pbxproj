@@ -40,7 +40,7 @@
 		2793CF6C4E3E6A1B5FAF8839 /* Pods-CWFlexiblePageControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWFlexiblePageControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CWFlexiblePageControl_Tests/Pods-CWFlexiblePageControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29DAAE65533D552612DB9FEF /* Pods-CWFlexiblePageControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWFlexiblePageControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-CWFlexiblePageControl_Tests/Pods-CWFlexiblePageControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		444221E75630FCF1D1BA44E8 /* Pods_CWFlexiblePageControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWFlexiblePageControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F5E9BF38679E5B54CE2DA88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4F5E9BF38679E5B54CE2DA88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CWFlexiblePageControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWFlexiblePageControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		9876F7D039AF864B6680FF9E /* Pods-CWFlexiblePageControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWFlexiblePageControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-CWFlexiblePageControl_Example/Pods-CWFlexiblePageControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A3010A17E150BC1DF2DE901B /* Pods-CWFlexiblePageControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CWFlexiblePageControl_Example.release.xcconfig"; path = "Target Support Files/Pods-CWFlexiblePageControl_Example/Pods-CWFlexiblePageControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B2C6E71233FF20A70B35AB8A /* Pods_CWFlexiblePageControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CWFlexiblePageControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D33E8554C7B3734AC3150C1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E0B2EAC20671CF80E8E1F8C8 /* CWFlexiblePageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CWFlexiblePageControl.podspec; path = ../CWFlexiblePageControl.podspec; sourceTree = "<group>"; };
+		D33E8554C7B3734AC3150C1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E0B2EAC20671CF80E8E1F8C8 /* CWFlexiblePageControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CWFlexiblePageControl.podspec; path = ../CWFlexiblePageControl.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				2793CF6C4E3E6A1B5FAF8839 /* Pods-CWFlexiblePageControl_Tests.debug.xcconfig */,
 				29DAAE65533D552612DB9FEF /* Pods-CWFlexiblePageControl_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Ja7423;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7RMCG6LBC4;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 9876F7D039AF864B6680FF9E /* Pods-CWFlexiblePageControl_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7RMCG6LBC4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CWFlexiblePageControl/CWFlexiblePageControl-Prefix.pch";
 				INFOPLIST_FILE = "CWFlexiblePageControl/CWFlexiblePageControl-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = A3010A17E150BC1DF2DE901B /* Pods-CWFlexiblePageControl_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7RMCG6LBC4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CWFlexiblePageControl/CWFlexiblePageControl-Prefix.pch";
 				INFOPLIST_FILE = "CWFlexiblePageControl/CWFlexiblePageControl-Info.plist";
